@@ -2,8 +2,8 @@
 name = "ygocarder"
 version = "2.6.2"
 description = "Yu-Gi-Oh! custom card maker"
-authors = ["lauqerm"]
-license = ""
+authors = ["christianbraghette"]
+license = "MIT"
 repository = "https://github.com/lauqerm/ygocarder"
 edition = "2024"
 rust-version = "1.90"
