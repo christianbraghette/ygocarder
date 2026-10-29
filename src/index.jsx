@@ -14,11 +14,14 @@ ReactDOM.render(
     document.getElementById('root'),
 );
 
+/** Desktop build bundles every asset locally, so PWA install and offline caching are not needed */
+const isTauri = !!import.meta.env.TAURI_ENV_PLATFORM;
+
 /** Ready for install prompt */
-initInstallPrompt();
+if (!isTauri) initInstallPrompt();
 
 // Register after the app has rendered, not during boot
-if (import.meta.env.PROD) {
+if (import.meta.env.PROD && !isTauri) {
     window.addEventListener('load', () => {
         registerServiceWorker();
     });

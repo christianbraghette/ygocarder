@@ -1,4 +1,5 @@
 import { NavigatorWithLimitedFeature } from 'src/model';
+import { IS_TAURI } from './detect';
 
 const CACHE_NAME = 'ygocarder-assets-v1';
 const MANIFEST_CACHE = 'ygocarder-manifest-v1';
@@ -111,6 +112,7 @@ export async function getFullDiagnostics(): Promise<FullDiagnostics> {
 // ─── Individual probes ─────────────────────────────────────────────────────
 
 function getDisplayMode(): DisplayMode {
+    if (IS_TAURI) return 'standalone';
     if ('standalone' in navigator && (navigator as NavigatorWithLimitedFeature).standalone === true) {
         return 'standalone'; // iOS
     }

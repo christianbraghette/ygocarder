@@ -58,6 +58,9 @@
     "preview": "vite preview",
     "sentry:sourcemaps": "sentry-cli sourcemaps inject --org lauqerm --project ygo-carder ./dist && sentry-cli sourcemaps upload --org lauqerm --project ygo-carder ./dist",
     "start": "vite",
+    "tauri": "tauri",
+    "tauri:build": "tauri build",
+    "tauri:dev": "tauri dev",
     "test:sc": "tsx scripts/test-simplified-chinese.ts"
   },
   "browserslist": {
@@ -77,6 +80,7 @@
     "@sentry/cli": "^2",
     "@sentry/react": "^8.42.0",
     "@sentry/vite-plugin": "^5.3.0",
+    "@tauri-apps/cli": "^2.12.4",
     "@types/jest": "^26.0.19",
     "@types/lodash.debounce": "^4.0.9",
     "@types/lodash.throttle": "^4.1.9",

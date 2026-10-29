@@ -1,6 +1,10 @@
 import { NavigatorWithLimitedFeature } from 'src/model';
 
+/** Desktop build runs inside a Tauri window, which is effectively an installed app */
+export const IS_TAURI = !!import.meta.env.TAURI_ENV_PLATFORM;
+
 export function isStandalone(): boolean {
+    if (IS_TAURI) return true;
     // iOS Safari uses non-standard navigator.standalone
     if ('standalone' in navigator && (navigator as NavigatorWithLimitedFeature).standalone === true) {
         return true;

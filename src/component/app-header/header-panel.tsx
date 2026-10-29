@@ -9,6 +9,7 @@ import { PresetManager } from '../preset-manager';
 import { SampleCard, SampleCardRef } from './sample';
 import { useRef } from 'react';
 import { InstallButton } from '../install-button';
+import { IS_TAURI } from 'src/pwa/detect';
 
 const StyledAppHeaderToolbarContainer = styled.div`
     display: flex;
@@ -142,12 +143,13 @@ export const HeaderPanel = ({
                 applyCardData={applyCardData}
             />
         </StyledAppHeaderButtonContainer>
-        <StyledAppHeaderButtonContainer className="app-header-button install-app">
+        {/** Desktop app already bundles every asset, so no install, sync or connection checks are needed */}
+        {!IS_TAURI && <StyledAppHeaderButtonContainer className="app-header-button install-app">
             <StyledHeaderButtonContainer
                 className={mergeClass('install-button-label')}
             >
                 <InstallButton className="button-label" />
             </StyledHeaderButtonContainer>
-        </StyledAppHeaderButtonContainer>
+        </StyledAppHeaderButtonContainer>}
     </StyledAppHeaderToolbarContainer>;
 };

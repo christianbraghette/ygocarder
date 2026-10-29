@@ -6,12 +6,17 @@ import { sentryVitePlugin } from '@sentry/vite-plugin';
 export default defineConfig(({ mode }) => {
     // Load env vars so SENTRY_AUTH_TOKEN is available
     const env = loadEnv(mode, process.cwd(), '');
+    // Set by the Tauri CLI when it runs beforeDevCommand / beforeBuildCommand
+    const isTauri = !!process.env.TAURI_ENV_PLATFORM;
 
     return {
-        base: '/ygocarder/',
+        // Desktop app serves the bundle from the root instead of the GitHub Pages sub path
+        base: isTauri ? '/' : '/ygocarder/',
+        // Expose TAURI_ENV_* to the client so the app can detect the desktop build
+        envPrefix: ['VITE_', 'TAURI_ENV_'],
         build: {
             target: 'es2020',
-            sourcemap: true, // equivalent to webpack's devtool: 'source-map'
+            sourcemap: !isTauri, // equivalent to webpack's devtool: 'source-map'
             chunkSizeWarningLimit: 1000, // increase chunk size warning limit to 1000kb, double the default of 500kb, since our chunks are often large due to the nature of the app
             rolldownOptions: {
                 output: {
