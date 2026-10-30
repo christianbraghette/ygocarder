@@ -46,7 +46,6 @@
   "scripts": {
     "analyze": "source-map-explorer 'dist/static/js/*.js'",
     "build": "vite build",
-    "build:sentry": "vite build",
     "build:manifest": "tsx scripts/build-asset-manifest.ts",
     "circular-dependency-test": "dpdm ./src/index.js",
     "compile": "tsc --noEmit",
@@ -56,7 +55,6 @@
     "prebuild": "yarn build:manifest",
     "predeploy": "yarn run build",
     "preview": "vite preview",
-    "sentry:sourcemaps": "sentry-cli sourcemaps inject --org lauqerm --project ygo-carder ./dist && sentry-cli sourcemaps upload --org lauqerm --project ygo-carder ./dist",
     "start": "vite",
     "tauri": "tauri",
     "tauri:build": "tauri build",
@@ -77,9 +75,6 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@sentry/cli": "^2",
-    "@sentry/react": "^8.42.0",
-    "@sentry/vite-plugin": "^5.3.0",
     "@tauri-apps/cli": "^2.12.4",
     "@types/jest": "^26.0.19",
     "@types/lodash.debounce": "^4.0.9",

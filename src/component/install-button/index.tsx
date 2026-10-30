@@ -181,7 +181,6 @@ export function InstallButton({
                 // Wait for the user to click "Install" in the modal.
                 setPhase('ready-to-install');
             }
-            await captureException(new Error('Not-error: Pull assets success'));
             cacheHeartbeat();
         } catch (err) {
             handleDownloadError(err, 'install');
@@ -194,7 +193,6 @@ export function InstallButton({
             const outcome = await triggerInstall();
             if (outcome === 'accepted') {
                 setPhase('done');
-                await captureException(new Error('Not-error: Install success'));
             } else {
                 // Dismissed the OS prompt; cache is preserved
                 reset();

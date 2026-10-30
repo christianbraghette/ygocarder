@@ -384,14 +384,6 @@ input:-internal-autofill-selected {
     line-height: 2;
 }
 
-#sentry-feedback {
-    --button-primary-background: var(--main-active);
-    --button-primary-hover-background: var(--sub-active);
-    --dialog-border-radius: var(--br-xl);
-    --dialog-padding: var(--spacing);
-    --input-focus-outline: var(--bw) auto var(--main-active);
-}
-
 .sliding-movable-window {
     .moveable-line,
     .moveable-control {

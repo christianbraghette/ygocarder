@@ -70,7 +70,7 @@ const feedbackList: Feedback[] = [
         author: 'Anonymous at Oct 18, 2026',
         question: 'I tried applying my custom colour but the star icon is getting cropped up. It works fine by using the default colours.',
         answer: 'Hi there, could you try some other names like "Evil★Twins Ki-sikil & Lil-la" and see if the problem still persists? The app still renders correctly on my end, so I can\'t quite reproduce the issue just yet.',
-        image: ['https://i.postimg.cc/L8DBMbsx/image.png'],
+        image: ['docs-image/postimg-L8DBMbsx.png'],
     },
     {
         author: 'Daniel at Oct 18, 2026',
@@ -91,13 +91,13 @@ const feedbackList: Feedback[] = [
         author: 'RedSupernovaDragon at Sep 26, 2026',
         question: 'Ok, I\'ve seen the reply. The thing is that those defects can also be seen without zooming, if you look carefully. Are you sure that there is no way you can fix the problem on these longer names, like you did on "shorter" ones?',
         answer: 'I mean monitoring is the safest I can do right now, as I need to do my own test too to make sure I don\'t accidentally break other things. Even with the example of the Italian Number C62, I can only somewhat see the problem with the letter "i", but I can\'t really see the problem with the letter "o" and so if I try to fix them now, they will look off to me 🥲. You can see the attached image, using non-aliasing zoom, it\'s really hard to say both letters has some problem.',
-        image: ['https://i.postimg.cc/tC2WqsqG/image.png'],
+        image: ['docs-image/postimg-tC2WqsqG.png'],
     },
     {
         author: 'Anonymous at Sep 22, 2026',
         question: 'When changing the opacity slider of the effect box in the layout row, the artwork gets stretched and there is no way to avoid this. Instead, I had a custom image as foil in the blending section which I wanted to show up in the text box semi transparently. The goal was actually to recreate a QCR effect with a custom logo instead of the 25th anniversary. I think this would be a great feature to add. Cheers and thanks for the great work.',
         answer: 'Hi there, the little box here will force the app to use the entire card image, leading it to stretch the artwork because it tries to fit a square image into a rectangle shape. You can untick it to preserve the ratio of the image.',
-        image: ['https://i.postimg.cc/2SWv26tt/Screenshot-2026-09-24-at-18-56-42.png'],
+        image: ['docs-image/postimg-2SWv26tt.png'],
     },
     {
         author: 'StardustixArt at Sep 21, 2026',
@@ -122,7 +122,7 @@ const feedbackList: Feedback[] = [
         author: 'RedSupernovaDragon at Sep 19, 2026',
         question: 'It might be useful to check the letters again, since there might be some issues on longer text compression. In the Italian name of Number C62, I think that some letters like O and I do not behave well. but when it comes to these extremely long names, it\'s difficult to see, so it could very well be an illusion.\nThere are also two things I noticed that are not problem in themselves, but rather small differences with the real cards. When I was test-typing the names of Armageddon\'s forms (kinda long names), I noticed that Purple Armageddon\'s IT name is rendered differently from the other two Super Kings. The way it appears compressed on real cards is not different from the other two; on the app, instead, it\'s clearly less compressed due to it being shorter.\nThe second thing I noticed is that sometimes, one or more letters appear more prominently than others, but that\'s just due to their larger traits, like B and O. So I don\'t think this is an issue, but the first point still stands. I also got the general impression that the name box is very close to the Attribute, while on real cards the space is slightly bigger.',
         answer: 'It\'s hard for me to find Italian cards, but it seems like there are some deliberate micro adjustments going on (even though the image is not perfectly aligned, you can still see the difference). I\'m not sure if this is the case, but you can sort of simulate this by just adding empty spaces behind card names. I can adjust the spacing between the card name and its attribute, but I\'m lacking the information to make a general decision.\nAlso, for what it\'s worth, when evaluating the card, especially tiny things like alignment, you should use the "original size" function (Ctrl + Y, or the zoom icon at the top right of the card). It will display the card as the actual size (when you download it), not as the preview size, which will complicate things like this.',
-        image: ['https://i.postimg.cc/DfBnMynM/image.png', 'https://i.postimg.cc/7LxKdDxs/image.png'],
+        image: ['docs-image/postimg-DfBnMynM.png', 'docs-image/postimg-7LxKdDxs.png'],
     },
     {
         author: 'RedSupernovaDragon at Sep 18, 2026',
@@ -256,25 +256,25 @@ const feedbackList: Feedback[] = [
         author: 'Anonymous at Jul 7, 2026',
         question: 'Artwork over Name/Arrows doesn\'t work',
         answer: 'Hi, I\'ve checked your card data. Please make sure the following options (see attached image) are enabled in the Blending button.',
-        image: ['https://i.postimg.cc/63Ln6ch3/image.png'],
+        image: ['docs-image/postimg-63Ln6ch3.png'],
     },
     {
         author: 'Vendoz at Jul 6, 2026',
         question: 'Hello again!, I don\'t know if it just me.. but i encountered some problems. First, the Art over link arrows seems broken, it just doesn\'t work at all. Second, It\'s lagging every time i try to input ATK/DEF. Thanks! ^_^',
         answer: 'Hi, I tested the card with the same settings and haven\'t encountered any issues (you can see the result below). Are you using a large image (over ~5 MB) or has the app been running for a very long time? Have you tried refreshing the page yet? That info will help me diagnose the problem further.',
-        image: ['https://i.postimg.cc/L4YFd03J/download.png'],
+        image: ['docs-image/postimg-L4YFd03J.png'],
     },
     {
         author: 'Vendoz at Jul 6, 2026',
         question: 'Hello again!, I don\'t know if it just me.. but i encountered some problems. First, the Art over link arrows seems broken, it just doesn\'t work at all. Second, It\'s lagging every time i try to input ATK/DEF. Thanks! ^_^',
         answer: 'Hi, I tested the card with the same settings and haven\'t encountered any issues (you can see the result below). Are you using a large image (over ~5 MB) or has the app been running for a very long time? Have you tried refreshing the page yet? That info will help me diagnose the problem further.',
-        image: ['https://i.postimg.cc/L4YFd03J/download.png'],
+        image: ['docs-image/postimg-L4YFd03J.png'],
     },
     {
         author: 'Vendoz at Jul 6, 2026',
         question: 'Hello again!, I don\'t know if it just me.. but i encountered some problems. First, the Art over link arrows seems broken, it just doesn\'t work at all. Second, It\'s lagging every time i try to input ATK/DEF. Thanks! ^_^',
         answer: 'Hi, I tested the card with the same settings and haven\'t encountered any issues (you can see the result below). Are you using a large image (over ~5 MB) or has the app been running for a very long time? Have you tried refreshing the page yet? That info will help me diagnose the problem further.',
-        image: ['https://i.postimg.cc/L4YFd03J/download.png'],
+        image: ['docs-image/postimg-L4YFd03J.png'],
     },
     {
         author: 'Anonymous at Jul 3, 2026',
@@ -300,7 +300,7 @@ const feedbackList: Feedback[] = [
         author: 'Snow at Jun 19, 2026',
         question: 'Hi! Sorry to disturb you guys, this card maker is amazing!!!!! Its the best I\'ve used. I would like to know if it\'s possible to remove the effect textbox and write on the place it originally it was, like the image on the card. Also, does the card maker have a full reset button? Like one that undo everything I\'ve selected previously and make the settings go back to how it was when I\'ve oppened de card maker (even advanced options, like "boundless" or "keep art border"). Sorry for the questions, thx for the card maker!!!!!!',
         answer: 'Hi there, when you move your mouse over the card, you will see two additional options appearing on the top right of them, including the full reset option, or you can also press the app\'s logo on the header. For your request about removing effect textbox, let\'s me check my assets to see if it is possible first, then I will get back to it later.',
-        image: ['https://i.postimg.cc/RFRQNt5m/image.png'],
+        image: ['docs-image/postimg-RFRQNt5m.png'],
     },
     {
         author: 'Anonymous at Jun 07, 2026',
@@ -310,7 +310,7 @@ const feedbackList: Feedback[] = [
         author: 'Anonymous at Jun 05, 2026',
         question: 'Can you let us export to MSE as well?\nMSE would be Magic Set Editor',
         answer: 'I have updated the export feature for single cards and the convert feature for card lists (be careful that you still need to save your list as a CSV later). You may try it now. There are a bunch of templates and I\'m not really sure which to use, so I\'m trying to convert it to the standard Series 10 template first.',
-        image: ['https://i.postimg.cc/V6h88gB0/image.png'],
+        image: ['docs-image/postimg-V6h88gB0.png'],
     },
     {
         author: 'Lukas at Jun 19, 2026',
@@ -322,16 +322,16 @@ const feedbackList: Feedback[] = [
         question: 'Hello, First thing first.. Thank you for all the works you\'ve been doing and to keep improving the plugin. I have a suggestion, Is it possible to make the art to be on top of level icons and card name?. Or, make the card name and level icons kinda blending in into the art if the art is on top of them. Thank You ^_^',
         answer: 'Hi, you can use the feature in the Blending menu. The result will be like below.',
         image: [
-            'https://i.postimg.cc/4NwYM2Lz/Screenshot-2026-06-18-at-19-59-18.png',
-            'https://i.postimg.cc/nzQ7fKj8/image.png',
-            'https://i.postimg.cc/Xvb6ksV9/image.png',
+            'docs-image/postimg-4NwYM2Lz.png',
+            'docs-image/postimg-nzQ7fKj8.png',
+            'docs-image/postimg-Xvb6ksV9.png',
         ],
     },
     {
         author: 'Lucky Zaneabane at Jun 15, 2026',
         question: 'I honestly may just be messing something up somehow, But is there a way to upload custom attributes? Ive uploaded an attribute image and it pops up in the level area but i dont see a way to possibly move it to the attribute area',
         answer: 'Hi, you may have mistakenly used the custom level/rank feature. You can find the custom attribute feature here.',
-        image: ['https://i.postimg.cc/tCdSzpB8/Screenshot-2026-06-16-at-15-37-23.png']
+        image: ['docs-image/postimg-tCdSzpB8.png']
     },
     {
         author: 'Anonymous at Jun 14, 2026',
@@ -362,7 +362,7 @@ const feedbackList: Feedback[] = [
         author: 'No name hack at Jun 01, 2026',
         question: 'I want made card overframe without frame pendulum effect, only scale pendulum appear, must options',
         answer: 'Hi, based on what you are describing, I\'m assuming you want the result to look something like this? If you confirm it, I can start working.',
-        image: ['https://i.postimg.cc/SRkXcBb6/Untitled.jpg'],
+        image: ['docs-image/postimg-SRkXcBb6.jpg'],
     },
     {
         author: 'RedSupernovaDragon at May 22, 2026',
@@ -415,21 +415,21 @@ const feedbackList: Feedback[] = [
         author: 'Anonymous at April 30, 2026',
         question: 'Now the image just literally goes over the frame, like literally I can\'t see the effect box',
         answer: <div>Well from your attached screenshot I thought the transparent effect box was intentional 😅. But regardless, just pull up the effect opacity back to 100. <a href='https://lauqerm.github.io/ygocarder/?data=%7B%22fm%22%3A%22tcg%22%2C%22rg%22%3A%22en%22%2C%22fr%22%3A%22fusion%22%2C%22lt%22%3Afalse%2C%22lf%22%3A%22auto%22%2C%22rf%22%3A%22auto%22%2C%22rpf%22%3A%22auto%22%2C%22fo%22%3A%22normal%22%2C%22op%22%3A%7B%22opbd%22%3A100%2C%22oppd%22%3A100%2C%22optx%22%3A100%2C%22opnm%22%3A0%2C%22opbf%22%3A%22%23404040%22%2C%22opab%22%3Atrue%2C%22opnb%22%3Atrue%2C%22opeb%22%3Afalse%2C%22opfb%22%3Atrue%2C%22opbl%22%3Afalse%7D%2C%22fn%22%3A%5B%5D%2C%22afn%22%3A%22normal%22%2C%22of%22%3A%5B%22normal%22%2C%22normal%22%2C%22normal%22%2C%22normal%22%5D%2C%22na%22%3A%22Junko%22%2C%22nst%22%3A%22predefined%22%2C%22ns%22%3A%7B%22nsep%22%3A90%2C%22nset%22%3A0%2C%22nsey%22%3A90%2C%22nsfs%22%3A%22%23cfc6de%22%2C%22nsft%22%3A%22Auto%22%2C%22nsgd%22%3A0%2C%22nscg%22%3A%220.000%7C%23eef10b%2C0.5%7C%23d78025%2C1.000%7C%237e20cf%22%2C%22nshe%22%3Afalse%2C%22nshg%22%3Afalse%2C%22nshl%22%3Afalse%2C%22nshs%22%3Afalse%2C%22nshfs%22%3A%22%23010101%22%2C%22nslc%22%3A%22%23000000%22%2C%22nslox%22%3A0%2C%22nsloy%22%3A0%2C%22nslw%22%3A0%2C%22nspt%22%3A%22none%22%2C%22nspr%22%3A%22rare%22%2C%22nssb%22%3A0%2C%22nssc%22%3A%22%23000000%22%2C%22nssox%22%3A0%2C%22nssoy%22%3A0%7D%2C%22at%22%3A%22LIGHT%22%2C%22att%22%3A%22auto%22%2C%22sf%22%3A%22NO+ICON%22%2C%22it%22%3A%22auto%22%2C%22st%22%3A6%2C%22stl%22%3A%5B%5D%2C%22sa%22%3A%22auto%22%2C%22ar%22%3A%22https%3A%2F%2Fi.imgur.com%2Fh5kXZeC.png%22%2C%22ad%22%3A%22%22%2C%22as%22%3A%22online%22%2C%22af%22%3Afalse%2C%22ast%22%3A%7B%22asfx%22%3Afalse%2C%22asfy%22%3Afalse%7D%2C%22arc%22%3A%7B%22aru%22%3A%22%25%22%2C%22ara%22%3A1%2C%22arx%22%3A0%2C%22ary%22%3A4%2C%22arw%22%3A100%2C%22arh%22%3A89.5%7D%2C%22hbg%22%3Atrue%2C%22bg%22%3A%22https%3A%2F%2Fi.postimg.cc%2FncXnFCGh%2FConstellation-Monster.webp%22%2C%22bgd%22%3A%22%22%2C%22bf%22%3Atrue%2C%22bst%22%3A%7B%22bsfx%22%3Afalse%2C%22bsfy%22%3Afalse%7D%2C%22bgs%22%3A%22online%22%2C%22bgt%22%3A%22frame%22%2C%22bgc%22%3A%7B%22bgu%22%3A%22%25%22%2C%22bga%22%3A0.685%2C%22bgx%22%3A0.0910746812386094%2C%22bgy%22%3A0%2C%22bgw%22%3A99.81785063752277%2C%22bgh%22%3A100%7D%2C%22ovg%22%3A%22%22%2C%22ovgd%22%3A%22%22%2C%22ovf%22%3Atrue%2C%22ovt%22%3A%22border%2Csource-in%7Cframe%2Cnone%22%2C%22ovst%22%3A%7B%22ovsfx%22%3Afalse%2C%22ovsfy%22%3Afalse%7D%2C%22ovgs%22%3A%22online%22%2C%22ovgc%22%3A%7B%22ovgx%22%3A0%2C%22ovgy%22%3A0%2C%22ovgw%22%3A100%2C%22ovgh%22%3A100%2C%22ovgu%22%3A%22%25%22%2C%22ovga%22%3A0.685%7D%2C%22sivg%22%3A%22%22%2C%22sivgd%22%3A%22%22%2C%22sivf%22%3Atrue%2C%22sivst%22%3A%7B%22sivsfx%22%3Afalse%2C%22sivsfy%22%3Afalse%7D%2C%22sivgs%22%3A%22online%22%2C%22sivgc%22%3A%7B%22sivgx%22%3A0%2C%22sivgy%22%3A0%2C%22sivgw%22%3A100%2C%22sivgh%22%3A100%2C%22sivgu%22%3A%22%25%22%2C%22sivga%22%3A1%7D%2C%22lm%22%3A%5B%221%22%2C%223%22%2C%227%22%2C%229%22%5D%2C%22lr%22%3A%22%22%2C%22il%22%3Afalse%2C%22ip%22%3Afalse%2C%22pf%22%3A%22auto%22%2C%22pe%22%3A%22Once+per+turn%3A+You+can+pay+800+LP%2C+increase+this+card%27s+Pendulum+Scale+by+1.%22%2C%22rs%22%3A%224%22%2C%22bs%22%3A%224%22%2C%22psi%22%3A%22medium%22%2C%22ta%22%3A%5B%22Fairy%22%2C%22Fusion%22%2C%22Effect%22%5D%2C%22es%22%3A%7B%22cdtl%22%3A%22strict%22%2C%22efs%22%3A%22auto%22%2C%22eus%22%3A0%2C%22ebg%22%3A%22auto%22%2C%22eml%22%3A0%2C%22ejr%22%3A100%7D%2C%22ps%22%3A%7B%22pfs%22%3A%22auto%22%2C%22pus%22%3A0%2C%22pbg%22%3A%22auto%22%2C%22pml%22%3A0%2C%22pjr%22%3A100%7D%2C%22ef%22%3A%22%5B2%2B+Effect+Monsters+on+your+field%5D%5CnEach+time+an+opponent%27s+monster+activates+its+effect%2C+place+1+Pure+Counter+on+that+opponent%27s+monster+%28max.+1%29+after+that+effect+resolves.+Unaffected+by+activated+effects+from+monster+with+a+Pure+Counter.+Cannot+be+destroyed+by+battle+with+monsters+with+a+Pure+Counter.%22%2C%22si%22%3A%22YGOC-EN001%22%2C%22atk%22%3A%222000%22%2C%22def%22%3A%222000%22%2C%22pw%22%3A%2218199611%22%2C%22sti%22%3A%22holo5%22%2C%22fe%22%3A%221%3Cst%3E+Edition%22%2C%22ife%22%3Atrue%2C%22act%22%3A%22%22%2C%22hct%22%3Afalse%2C%22isp%22%3Afalse%2C%22ile%22%3Afalse%2C%22idt%22%3Afalse%2C%22ilc%22%3Afalse%2C%22cr%22%3A%22%C2%A92020+Studio+Dice%2FSHUEISHA%2C+TV+TOKYO%2C+KONAMI%22%2C%22fh%22%3Atrue%2C%22sts%22%3A%5Bfalse%2C%22%23010101%22%2Cfalse%2C%22%23000000%22%5D%2C%22tts%22%3A%5Bfalse%2C%22%23010101%22%2Cfalse%2C%22%23000000%22%5D%2C%22ets%22%3A%5Bfalse%2C%22%23010101%22%2Cfalse%2C%22%23000000%22%5D%2C%22pts%22%3A%5Bfalse%2C%22%23010101%22%2Cfalse%2C%22%23000000%22%5D%2C%22ots%22%3A%5Btrue%2C%22%23ffffff%22%2Ctrue%2C%22%23000000%22%5D%2C%22dl%22%3A%5B%22%22%2C%22%22%2C%22%22%2C%22%22%2C%22%22%2C%22%22%2C%22%22%5D%2C%22fl%22%3A%5B0%2C0%2C0%2C1%5D%2C%22ve%22%3A3%7D' target='_blank' rel='noreferrer'>This link</a> contains a sample card with your frame already applied, you can work from here if you still have trouble adjusting the config.</div>,
-        image: ['https://i.postimg.cc/cJCJnXQR/image.png'],
+        image: ['docs-image/postimg-cJCJnXQR.png'],
     },
     {
         author: 'Anonymous at April 30, 2026',
         question: 'That didnt work, even though i did everything you told me, is there smth im missing?',
         answer: 'Your frame crop is a bit off so it does not align with other elements on the card. You can use the "Use whole image" option to ignore manual crop and use the full image instead. Let me know if there is still any issue after that.',
-        image: ['https://i.postimg.cc/Dfqqd5VQ/image.png'],
+        image: ['docs-image/postimg-Dfqqd5VQ.png'],
     },
     {
         author: 'Anonymous at April 29, 2026',
         question: 'this is the frame i want \nhttps://static.wikia.nocookie.net/ycm/images/4/46/Constellation_Monster.png/revision/latest?cb=20180202161511\n\nif we can pull it off thats good, but if we cant then can i get a feature that lets me add custom templates like this one to your app?',
         answer: 'Hi, it takes a bit of set up but you can certainly apply your template in the app. Below is a step-by-step guide and the end result.',
         image: [
-            'https://i.postimg.cc/HL4PXZjw/test.png',
-            'https://i.postimg.cc/Z5gyj4v0/download-(2).png',
+            'docs-image/postimg-HL4PXZjw.png',
+            'docs-image/postimg-Z5gyj4v0.png',
         ],
     },
     {
@@ -508,7 +508,7 @@ const feedbackList: Feedback[] = [
         author: 'Anonymous at March 19, 2026',
         question: 'I am not sure if this is even feasible, but I think it\'d be mighty convenient if there was a feature that allowed you to display the submitted card art mirrored in the card display, to save the bother of mirroring it beforehand.',
         answer: 'Hi, now card artwork / background will allow you to flip the image horizontally / vertically.',
-        image: ['https://i.postimg.cc/fT68pVrZ/Screenshot-2026-03-19-at-11-44-37.png'],
+        image: ['docs-image/postimg-fT68pVrZ.png'],
     },
     {
         author: 'RedSupernovaDragon at March 17, 2026',
@@ -643,7 +643,7 @@ const feedbackList: Feedback[] = [
         author: 'Blake at Dec 21, 2025',
         question: 'When are you going to be adding the overframe rare?',
         answer: 'With Layout options the app is already able to create cards with extended art (see attached image), but I will need to tweak some behaviors so it looks more correct.\nGrandmaster Rare however is a different story, as it use an entirely different set of layers and I can only wait for talented artists to extract them.',
-        image: ['https://i.imgur.com/a6ZlmEg.png'],
+        image: ['docs-image/imgur-a6ZlmEg.png'],
     },
     {
         author: 'Blake at Dec 18, 2025',
@@ -663,7 +663,7 @@ const feedbackList: Feedback[] = [
         author: 'Anonymous User at Dec 13, 2025',
         question: 'would it be possible to add the ability to upload custom attribute icons?',
         answer: 'Right now I can only support using external link for attribute, so you can upload your custom attribute icon to an image hosting service (e.g., imgur) and use the link in the attribute input box.',
-        image: ['https://i.postimg.cc/cJMFW3M1/image.png'],
+        image: ['docs-image/postimg-cJMFW3M1.png'],
     },
     {
         author: 'TheTonyB at Dec 12, 2025',
@@ -713,7 +713,7 @@ const feedbackList: Feedback[] = [
         author: 'Armando Giordano at Sep 06, 2025',
         question: 'Hello! I am loving your work. I hope my issue is not because of ignorance, but it seems like it\'s not possible to download cards as images.',
         answer: 'Hi there, based on the report it seems that you are using an iPad. I don\'t have an iPad to test right now, but could you please provide me some more information?\n1. When you click the Download button, does anything happen? Does the app freeze or it just not doing anything?\n2. Is the problem just appear recently, or it never worked in the first place?',
-        image: ['https://i.postimg.cc/Y2fjyvV2/image.png'],
+        image: ['docs-image/postimg-Y2fjyvV2.png'],
     },
     {
         author: 'Rush Duel at Jun 22, 2025',

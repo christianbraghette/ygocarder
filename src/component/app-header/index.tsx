@@ -3,21 +3,17 @@ import styled from 'styled-components';
 import { Explanation } from '../explanation';
 import { useI18N, useLanguage } from 'src/service';
 import { Radio, Tooltip } from 'antd';
-import { captureException } from 'src/util';
 import { VersionLogButton } from './version-log';
 import { StyledPopMarkdown } from '../atom';
 import { QuestionAndFeedback } from './faq';
 import { type SampleCard } from './sample';
-import React, { lazy, useEffect, useRef } from 'react';
+import React, { lazy } from 'react';
 import { PUBLIC_PATH } from 'src/model';
-import { FAQ_BUTTON_ID } from './model';
 import './app-header.scss';
 
 export const Affiliation = () => {
     return <div className="affiliation">
-        <div className="affiliation-link" onClick={() => {
-            captureException(new Error('Not-error: Affiliation link clicked'));
-        }}>
+        <div className="affiliation-link">
             <a href="https://github.com/lauqerm/ygocarder" target="_blank" rel="noreferrer">
                 <GithubFilled />
             </a>
@@ -52,20 +48,6 @@ const AppHeaderContainer = styled.div`
             > span:nth-child(2) {
                 font-size: 0.85em;
                 letter-spacing: 0.02em;
-            }
-        }
-        .bug-report {
-            text-align: center;
-            border: var(--bw) solid var(--sub-level-1);
-            background-color: var(--main-level-4);
-            border-radius: var(--br-lg);
-            padding: 0 var(--spacing-xs);
-            cursor: pointer;
-            &:hover {
-                background: var(--sub-danger);
-            }
-            a {
-                display: block;
             }
         }
     }
@@ -148,33 +130,6 @@ export const AppHeader = ({
         changeLanguage,
     }));
 
-    /** Analytic and report */
-    const sentryInitialized = useRef(false);
-    const reportTarget = document.getElementById('sentry-bug-report');
-    useEffect(() => {
-        if (language) import('../../util/sentry').then(({ setupSentry }) => {
-            if (sentryInitialized.current === false) {
-                sentryInitialized.current = true;
-                setupSentry(
-                    document.getElementById('sentry-bug-report'),
-                    {
-                        formTitle: language['contributor.bug-report.tooltip'],
-                        nameLabel: language['contributor.bug-report.name.label'],
-                        namePlaceholder: language['contributor.bug-report.name.placeholder'],
-                        messageLabel: language['contributor.bug-report.message.label'],
-                        messagePlaceholder: language['contributor.bug-report.message.placeholder'],
-                        addScreenshotButtonLabel: language['contributor.bug-report.screenshot.label'],
-                        removeScreenshotButtonLabel: language['contributor.bug-report.remove-screenshot.label'],
-                        cancelButtonLabel: language['contributor.bug-report.cancel.label'],
-                        submitButtonLabel: language['contributor.bug-report.submit.label'],
-                        isRequiredLabel: language['contributor.bug-report.required.label'],
-                        successMessageText: language['contributor.bug-report.success.label'],
-                    }
-                );
-            }
-        });
-    }, [language, reportTarget]);
-
     return <AppHeaderContainer className="app-header">
         <Tooltip title={language['generic.reset.label']}>
             <img className="app-logo" alt="app-logo" src={`${PUBLIC_PATH}/logo192.png`} width={35} onClick={() => resetCardData()} />
@@ -194,22 +149,6 @@ export const AppHeader = ({
                             </Radio.Button>;
                         })}
                 </Radio.Group>
-                <Tooltip title={language['contributor.bug-report.tooltip-detail']}>
-                    <span
-                        id="sentry-bug-report"
-                        className="bug-report"
-                        onMouseOver={() => {
-                            document.getElementById(FAQ_BUTTON_ID)?.classList.add('js-highlight');
-                        }}
-                        onMouseOut={() => {
-                            document.getElementById(FAQ_BUTTON_ID)?.classList.remove('js-highlight');
-                        }}
-                    >
-                        <div>
-                            {language['contributor.bug-report.tooltip']}
-                        </div>
-                    </span>
-                </Tooltip>
                 <QuestionAndFeedback />
                 <VersionLogButton />
             </div>

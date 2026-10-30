@@ -1,11 +1,8 @@
 import path from 'path';
 import react from '@vitejs/plugin-react';
-import { defineConfig, loadEnv } from 'vite';
-import { sentryVitePlugin } from '@sentry/vite-plugin';
+import { defineConfig } from 'vite';
 
-export default defineConfig(({ mode }) => {
-    // Load env vars so SENTRY_AUTH_TOKEN is available
-    const env = loadEnv(mode, process.cwd(), '');
+export default defineConfig(() => {
     // Set by the Tauri CLI when it runs beforeDevCommand / beforeBuildCommand
     const isTauri = !!process.env.TAURI_ENV_PLATFORM;
 
@@ -41,13 +38,6 @@ export default defineConfig(({ mode }) => {
         },
         plugins: [
             react(),
-            // Only run Sentry in production builds and when token is present
-            sentryVitePlugin({
-                authToken: env.SENTRY_AUTH_TOKEN,
-                org: 'lauqerm',
-                project: 'ygo-carder',
-                disable: !env.SENTRY_AUTH_TOKEN || mode !== 'production',
-            }),
         ],
         resolve: {
             alias: {

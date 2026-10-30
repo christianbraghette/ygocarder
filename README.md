@@ -48,8 +48,6 @@ If you want to deploy the app elsewhere, you will need to prepare your own `.env
 ```env
 ### Template file used for batch import function
 VITE_TEMPLATE_FILE="https://drive.google.com/file/d/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/view?usp=sharing"
-### Sentry DSN Link if you want to use the feedback function
-VITE_SENTRY_DSN="https://32e20d849c5724b2e63eab9d0a57c165@o4508424630697984.ingest.us.sentry.io/xxxxxxxxxxxxxxxx"
 ```
 It's okay to leave the file empty, it will simply disable features related to them.
 

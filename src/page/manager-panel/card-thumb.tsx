@@ -331,12 +331,12 @@ export const CardThumb = ({
     const normalizedCardName = normalizeCardName(name);
     const normalizedCardArt = artSource === 'offline'
         ? !art
-            ? 'https://i.imgur.com/jjtCuG5.png' // Placeholder
+            ? 'asset/image/external/imgur-jjtCuG5.png' // Placeholder
             : artData
         : art;
     const normalizedBackgroundArt = backgroundSource === 'offline'
         ? !background
-            ? 'https://imgur.com/pdSVzUZ.png' // Empty background
+            ? 'asset/image/external/imgur-pdSVzUZ.png' // Empty background
             : backgroundData
         : background;
     const normalizedCardIconType = cardIcon === 'auto' ? getCardIconFromFrame(frame) : cardIcon;
@@ -622,7 +622,7 @@ const DelayedImage = ({
     canvasCoordinate,
     style,
 }: DelayedImage) => {
-    const [internalLink, setInternalLink] = useState('https://imgur.com/pdSVzUZ.png');
+    const [internalLink, setInternalLink] = useState('asset/image/external/imgur-pdSVzUZ.png');
     const imageRef = useRef<HTMLImageElement>(null);
     const [calculatedStyle, setCalculatedStyle] = useState(() => calculateThumbArtStyle(
         imageRef.current?.naturalWidth ?? 1,

@@ -206,11 +206,6 @@ export const StyledByMe = styled.div`
             margin-left: 1px;
         }
     }
-    picture {
-        img {
-            height: 35px;
-        }
-    }
 `;
 
 export const ErrorAlert = styled.span`
